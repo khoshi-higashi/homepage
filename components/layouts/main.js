@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { Box, Container } from "@chakra-ui/react";
-import { checkIsManualRevalidate } from "next/dist/server/api-utils";
 
 const Main = ({ children, router }) => {
     return (
