@@ -20,7 +20,23 @@ const Navbar = props => {
 
     return (
         <Box position="fixed" as="nav" w="100%" bg={useColorModeValue("#ffffff40", "#20202380")} style={{ backdropFilter: "blur(10px)" }} zIndex={1} {...props}>
-            Navbar
+            <Container display="flex" p={2} maxW="container.md" wrap="wrap" align="center" justify="space-between" >
+                <Flex align="center" mr={5}>
+                    <Heading as="h1" size="lg" letterSpacing={"tighter"} >
+                        <Logo />
+                    </Heading>
+                </Flex>
+                <Stack direction={{ base: "column", md: "row" }} display={{ base: "none", md: "flex" }} width={{ base: "full", md: "auto" }} alignItems="center" flexGrow={1} mt={{ base: 4, nmd: 0 }}>
+                    <LinkItem href="/works" path={path}>
+                        Works
+                    </LinkItem>
+                    <LinkItem href="/posts" path={path}>
+                        Posts
+                    </LinkItem>
+                </Stack>
+            </Container>
         </Box>
     )
 }
+
+export default Navbar
