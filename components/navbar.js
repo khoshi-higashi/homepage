@@ -27,12 +27,12 @@ const Navbar = props => {
           </Heading>
         </Flex>
         <Stack direction={{ base: "column", md: "row" }} display={{ base: "none", md: "flex" }} width={{ base: "full", md: "auto" }} alignItems="center" flexGrow={1} mt={{ base: 4, nmd: 0 }}>
-          <LinkItem href="/works" path={path}>
+          <Link href="/works" path={path}>
             Works
-          </LinkItem>
-          <LinkItem href="/posts" path={path}>
+          </Link>
+          <Link href="/posts" path={path}>
             Posts
-          </LinkItem>
+          </Link>
         </Stack>
 
         <Box flex={1} align="right">
