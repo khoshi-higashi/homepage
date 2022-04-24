@@ -14,6 +14,9 @@ const Page = () => {
           </Heading>
           <p>Digital Craftzman ( Developer )</p>
         </Box>
+        <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} align="center">
+          <Image />
+        </Box>
       </Box>
     </Container>
   )
