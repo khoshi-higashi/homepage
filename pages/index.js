@@ -1,5 +1,9 @@
-import { Container, Box, Heading, Image, useColorModeValue } from "@chakra-ui/react"
+import NextLink from "next/link"
+import { Container, Box, Heading, Image, useColorModeValue, Link, Button } from "@chakra-ui/react"
 import Section from "../components/section"
+import Paragraph from "../components/paragraph"
+import { ChevronRightIcon } from "@chakra-ui/icons"
+import { BioSection, BioYear } from "../components/bio"
 
 const Page = () => {
   return (
@@ -24,7 +28,32 @@ const Page = () => {
         <Heading as="h3" variant="section-title">
           Work
         </Heading>
-        <p>Paragraph</p>
+        <Paragraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <NextLink href="/works/sample">
+            <Link>sample</Link>
+          </NextLink>
+          .
+        </Paragraph>
+        <Box align="center" my={4}>
+          <NextLink href="/works">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+              My portfolio
+            </Button>
+          </NextLink>
+        </Box>
+      </Section>
+
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Bio
+        </Heading>
+        <BioSection>
+          <BioYear>
+            1998
+          </BioYear>
+          Born in Osaka（大阪）, Japan.
+        </BioSection>
       </Section>
     </Container>
   )
