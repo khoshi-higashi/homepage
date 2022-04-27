@@ -36,8 +36,8 @@ const Page = () => {
           .
         </Paragraph>
         <Box align="center" my={4}>
-          {/* <NextLink href="/works"> */}
-          <NextLink href="https://react-firebase-todo-app-d287a.web.app/">
+          <NextLink href="/works">
+            {/* <NextLink href="https://react-firebase-todo-app-d287a.web.app/"> */}
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               My portfolio
             </Button>
