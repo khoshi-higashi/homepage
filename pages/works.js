@@ -12,10 +12,15 @@ const Works = () => {
             </Heading>
 
             <SimpleGrid columns={[1, 1, 2]} gap={6}>
-                <Section>
+                <Section delay={0.1}>
                     <WorkGridItem id='highlight' title='highlight' thumbnail='' />
                     {/* <WorkGridItem id='highlight' title='highlight' thumbnail={thumbHighlight} /> */}
                     A book highlight app
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium.
+                </Section>
+                <Section delay={0.2}>
+                    <WorkGridItem id='worknote' title='worknote' thumbnail='' />
+                    {/* <WorkGridItem id='highlight' title='highlight' thumbnail={thumbHighlight} /> */}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium.
                 </Section>
             </SimpleGrid>
